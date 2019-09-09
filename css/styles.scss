@@ -96,7 +96,7 @@ main {
     .subscribe {
       display: flex;
       flex-direction: column;
-      align-content: center;
+      align-items: center;
       padding-left: 0.6em;
       padding-right: 0.6em;
 
@@ -105,6 +105,7 @@ main {
           border-radius: 25px;
           font-size: 0.8em;
           padding: 0.8em 1.2em 0.8em 1.2em;
+          min-width: 15.625em;
 
             &::placeholder {
               color: $color-pale-blue;
@@ -125,6 +126,7 @@ main {
           -webkit-box-shadow: 0px 5px 10px 1px rgba(194,211,255,1);
           -moz-box-shadow: 0px 5px 10px 1px rgba(194,211,255,1);
           box-shadow: 0px 5px 10px 1px rgba(194,211,255,1);
+          min-width: 15.625em;
         }
     }
 }
@@ -222,7 +224,47 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1024px) {
 
-  //CSS
+  .container {
+    padding-left: 3.2em;
+    padding-right: 3.2em;
+  }
+
+  header .logo {
+    height: 1.563em;
+  }
+
+  .marketing {
+
+      .title {
+        font-size: 2em;
+      }
+
+      .message {
+        font-size: 0.92em;
+      }
+
+      .subscribe {
+
+          .input-email {
+            width: 31em;
+
+              &::placeholder {
+                font-size: 0.9em;
+              }
+          }
+
+          .but-notify {
+            width: 31em;
+          }
+      }
+  }
+
+  footer {
+    .attribution .second,
+    .attribution .third {
+      display: inline;
+    }
+  }
 
 }
 
@@ -233,7 +275,47 @@ footer {
 
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
 
-  //CSS
+  .container {
+    padding-left: 3.2em;
+    padding-right: 3.2em;
+  }
+
+  header .logo {
+    height: 1.563em;
+  }
+
+  .marketing {
+
+      .title {
+        font-size: 2em;
+      }
+
+      .message {
+        font-size: 0.92em;
+      }
+
+      .subscribe {
+
+          .input-email {
+            width: 32em;
+
+              &::placeholder {
+                font-size: 0.9em;
+              }
+          }
+
+          .but-notify {
+            width: 32em;
+          }
+      }
+  }
+
+  footer {
+    .attribution .second,
+    .attribution .third {
+      display: inline;
+    }
+  }
 
 }
 
@@ -244,8 +326,38 @@ footer {
 
 @media (min-width: 481px) and (max-width: 767px) {
 
-  //CSS
+  header .logo {
+    height: 1.563em;
+  }
 
+  .marketing {
+
+      .title {
+        font-size: 1.8em;
+      }
+
+      .message {
+        font-size: 0.9em;
+      }
+
+      .subscribe {
+
+          .input-email {
+            width: 28.125em;
+          }
+
+          .but-notify {
+            width: 28.125em;
+          }
+      }
+  }
+
+  footer {
+    .attribution .second,
+    .attribution .third {
+      display: inline;
+    }
+  }
 }
 
 /*
@@ -280,11 +392,11 @@ footer {
           .input-email {
             padding-left: 1.5em;
             padding-right: 1.5em;
-            max-width: 25em;
+            width: 25em;
           }
 
           .but-notify {
-            max-width: 25em;
+            width: 25em;
           }
       }
   }
