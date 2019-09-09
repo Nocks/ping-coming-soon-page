@@ -11,38 +11,43 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <script src="https://kit.fontawesome.com/70ab2d7f09.js"></script>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <div class="container">
-    <div class="header">
+    <header>
       <div class="logo-wrapper">
         <img src="images/logo.svg" alt="logo">
       </div>
-    </div>
-    <div class="main">
+    </header>
+    <main>
       <div class="marketing">
-        <h1>We are launching <span>soon!</span></h1>
-        <p>Subscribe and get notified</p>
+        <h1 class="title">We are launching <span class="emphasise">soon!</span></h1>
+        <p class="message">Subscribe and get notified</p>
         <div class="subscribe">
-          <input type="text" name="" placeholder="Your email address...">
+          <input type="text" class="input-email" placeholder="Your email address...">
           <button type="button" class="but-notify">Notify Me</button>
         </div>
       </div>
       <div class="illustration">
-        <img src="images/illustration-dashboard.png" alt="dashboard illustration">
+        <img src="images/illustration-dashboard.png" class="dashboard-illustration" alt="dashboard illustration">
       </div>
+      <div class="social-links-wrapper">
+        <div class="social-icon">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+        <div class="social-icon">
+          <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+        <div class="social-icon">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
     </div>
+    </main>
     <footer>
       <p class="attribution">
         <span class="first">&copy; Copyright Ping. All rights reserved.</span>
         <span class="second">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.</span>
-        <span class="third">Coded by <a href="#">Your Name Here</a>.</span>
+        <span class="third">Coded by <a href="http://enockaddey.com/">Enock Kwesi Addey</a>.</span>
       </p>
     </footer>
   </div>
