@@ -88,7 +88,7 @@ main {
   padding: 0.8em 1.2em 0.8em 1.2em;
 }
 .marketing .subscribe .input-email::placeholder {
-  color: #969696;
+  color: #c2d3ff;
   font-size: 0.8em;
 }
 .marketing .subscribe .but-notify {

@@ -107,7 +107,7 @@ main {
           padding: 0.8em 1.2em 0.8em 1.2em;
 
             &::placeholder {
-              color: $color-gray;
+              color: $color-pale-blue;
               font-size: 0.8em;
             }
         }
@@ -141,7 +141,6 @@ main {
 .social-links-wrapper {
   display: flex;
   justify-content: center;
-  // margin-bottom: 1.5em;
   margin-top: 4em;
 
     .social-icon + .social-icon {
