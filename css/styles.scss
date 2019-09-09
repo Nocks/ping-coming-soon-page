@@ -105,7 +105,7 @@ main {
           border-radius: 25px;
           font-size: 0.8em;
           padding: 0.8em 1.2em 0.8em 1.2em;
-          min-width: 15.625em;
+          width: 15.625em;
 
             &::placeholder {
               color: $color-pale-blue;
@@ -126,7 +126,7 @@ main {
           -webkit-box-shadow: 0px 5px 10px 1px rgba(194,211,255,1);
           -moz-box-shadow: 0px 5px 10px 1px rgba(194,211,255,1);
           box-shadow: 0px 5px 10px 1px rgba(194,211,255,1);
-          min-width: 15.625em;
+          width: 15.625em;
         }
     }
 }
@@ -211,9 +211,105 @@ footer {
   ##Screen = B/w 1025px to 1280px
 */
 
-@media (min-width: 1025px) and (max-width: 1280px) {
+// @media (min-width: 1025px) and (max-width: 1280px)
 
-  //CSS
+@media (min-width: 1025px) {
+
+  .container {
+    padding-top: 3em;
+    padding-left: 10em;
+    padding-right: 10em;
+  }
+
+  header .logo {
+    height: 1.563em;
+  }
+
+  main {
+    margin-top: 1.5em;
+  }
+
+  .marketing {
+
+      .title {
+        font-size: 2em;
+      }
+
+      .message {
+        font-size: 1em;
+      }
+
+      .subscribe {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: center;
+
+          .input-email {
+            width: 24em;
+            margin-right: 1em;
+
+              &::placeholder {
+                font-size: 1em;
+              }
+          }
+
+          .but-notify {
+            width: 10em;
+          }
+      }
+  }
+
+  .illustration {
+    display: flex;
+    justify-content: center;
+
+      .dashboard-illustration {
+        width: 60%;
+      }
+  }
+
+  .social-links-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 4em;
+
+      .social-icon + .social-icon {
+        margin-top: 0;
+      }
+
+      .social-icon {
+        margin-right: 11px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+      }
+
+      .social-icon .fab {
+        border: 1px solid $color-pale-blue;
+        border-radius: 50%;
+        color: $color-blue;
+        font-size: 0.8em;
+        height: 36.8px;
+        padding: 9.6px;
+        text-align: center;
+        text-decoration: none;
+        width: 36.8px;
+      }
+  }
+
+  footer {
+
+    .attribution  {
+      font-size: 0.622em;
+    }
+
+    .attribution .second,
+    .attribution .third {
+      display: inline;
+    }
+  }
 
 }
 
@@ -260,6 +356,7 @@ footer {
   }
 
   footer {
+
     .attribution .second,
     .attribution .third {
       display: inline;
